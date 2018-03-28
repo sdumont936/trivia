@@ -121,7 +121,7 @@ public class GameTest {
 		resetSystemOutputStream();
 		game.answerCorrectly();
 		stack = getSystemOutput();
-		Assertions.assertThat(getNextOutput(stack)).contains("Answer was correct!!!!");
+		Assertions.assertThat(getNextOutput(stack)).contains("Answer is correct !!!!");
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2 now has 1 Gold Coins.");
 
 		resetSystemOutputStream();
@@ -139,7 +139,7 @@ public class GameTest {
 		resetSystemOutputStream();
 		game.answerCorrectly();
 		stack = getSystemOutput();
-		Assertions.assertThat(getNextOutput(stack)).contains("Answer was correct!!!!");
+		Assertions.assertThat(getNextOutput(stack)).contains("Answer is correct !!!!");
 		Assertions.assertThat(getNextOutput(stack)).contains("Player1 now has 1 Gold Coins.");
 		
 		resetSystemOutputStream();
@@ -148,11 +148,10 @@ public class GameTest {
 		stack = getSystemOutput();
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2 is the current player");
 		Assertions.assertThat(getNextOutput(stack)).contains("They have rolled a 1");
-		Assertions.assertThat(getNextOutput(stack)).contains("Player2 is getting out of the penalty box");
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2's new location is 0");
 		Assertions.assertThat(getNextOutput(stack)).contains("The category is Pop");
 		Assertions.assertThat(getNextOutput(stack)).contains("Pop Question 0");
-		Assertions.assertThat(getNextOutput(stack)).contains("Answer was correct!!!!");
+		Assertions.assertThat(getNextOutput(stack)).contains("Answer is correct !!!!");
 		// RG : 1 coin / réponse correcte
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2 now has 2 Gold Coins.");
 		
@@ -166,11 +165,10 @@ public class GameTest {
 		stack = getSystemOutput();
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2 is the current player");
 		Assertions.assertThat(getNextOutput(stack)).contains("They have rolled a 1");
-		Assertions.assertThat(getNextOutput(stack)).contains("Player2 is getting out of the penalty box");
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2's new location is 1");
 		Assertions.assertThat(getNextOutput(stack)).contains("The category is Science");
 		Assertions.assertThat(getNextOutput(stack)).contains("Science Question 0");
-		Assertions.assertThat(getNextOutput(stack)).contains("Answer was correct!!!!");
+		Assertions.assertThat(getNextOutput(stack)).contains("Answer is correct !!!!");
 		// RG : 1 coin / réponse correcte
 		Assertions.assertThat(getNextOutput(stack)).contains("Player2 now has 3 Gold Coins.");
 		
